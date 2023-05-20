@@ -44,8 +44,8 @@ spec:
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: my-secret
-                  key: DB_PASSWORD
+                  name: my-postgresql
+                  key: postgres-password
             - name: ECR-URL
               valueFrom:
                 secretKeyRef:
